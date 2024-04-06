@@ -147,11 +147,11 @@ class TestHW8(unittest.TestCase):
         self.assertEqual(low_rating_data['Cafe'], 34)
 
     def test_find_restaurant_with_star(self):
-        restaurant_list3_8 = find_restaurant_with_star(
+        restaurant_list_3_8 = find_restaurant_with_star(
             3.8, 'restaurants_south_u.db')
-        self.assertIsInstance(restaurant_list3_8, list)
-        self.assertEqual(len(restaurant_list3_8), 2)
-        self.assertEqual(restaurant_list3_8[0], 'Insomnia Cookies')
+        self.assertIsInstance(restaurant_list_3_8, list)
+        self.assertEqual(len(restaurant_list_3_8), 2)
+        self.assertEqual(restaurant_list_3_8[0], 'Insomnia Cookies')
 
         restaurant_list_4_1 = find_restaurant_with_star(
             4.1, 'restaurants_south_u.db')
